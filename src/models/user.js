@@ -34,13 +34,6 @@ class User extends Sequelize.Model {
             sequelize
         })
     }
-
-    static associate( models ) {
-        this.hasOne( models.Profile, {
-            foreignKey: 'user_id',
-            as: 'profile'
-        } )
-    }
 }
 
 export default User

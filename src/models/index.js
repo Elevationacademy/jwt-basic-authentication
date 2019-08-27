@@ -2,11 +2,9 @@ import { Sequelize } from 'sequelize'
 import sequelize from '../lib/database/sequelize-connection'
 
 import User from './User'
-import Profile from './Profile'
 
 const models = {
-    User: User.init( sequelize, Sequelize ),
-    Profile: Profile.init( sequelize, Sequelize )
+    User: User.init( sequelize, Sequelize )
 }
 
 Object.values( models )
